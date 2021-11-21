@@ -1,36 +1,7 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const express = require('express')
 const app = express()
 const port = process.env.PORT || 8080
+const cors = require('cors')
 
 const mongoose = require('mongoose');
 const { SchemaTypes, Schema } = mongoose;
@@ -183,6 +154,7 @@ router.get("/update/todo/:_id",(req,res)=>{
     and replace "mongoAtlasUri" with your mongodb atlas uri.
 */
 // mongoose.connect( mongoAtlasUri, {useNewUrlParser: true, useUnifiedTopology: true})
+app.use(cors());
 
 app.use(router)
 
