@@ -1,0 +1,17 @@
+###
+GET http://127.0.0.1:8080/
+
+###
+GET http://127.0.0.1:8080/add/todo?todo=abc&email=haingdc@gmail.com
+
+###
+GET http://127.0.0.1:8080/collection/columns
+
+###
+GET http://127.0.0.1:8080/collection/columns/add?column=Done
+
+###
+GET http://127.0.0.1:8080/collection/column_order
+
+###
+GET http://127.0.0.1:8080/collection/tasks/add?content=Take+out+the+garbage
