@@ -94,7 +94,15 @@ router.get('/collection/columns', async (req, res) => {
   }
 });
 
-
+router.get('/collection/tasks', async (req, res) => {
+  try {
+    const tasks = await Task_model.find({});
+    res.json(tasks)
+  } catch(err) {
+    console.log(err);
+    res.send({ err });
+  }
+});
 
 router.get('/collection/tasks/add', (req, res) => {
   const { content } = req.query;

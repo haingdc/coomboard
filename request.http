@@ -14,4 +14,7 @@ GET http://127.0.0.1:8080/collection/columns/add?column=Done
 GET http://127.0.0.1:8080/collection/column_order
 
 ###
+GET http://127.0.0.1:8080/collection/tasks
+
+###
 GET http://127.0.0.1:8080/collection/tasks/add?content=Take+out+the+garbage
